@@ -1,6 +1,6 @@
 "use client";
 
-import {useState} from "react";
+import {FormEvent, useState} from "react";
 import {useRouter} from "next/navigation";
 
 export default function Search() {
@@ -10,10 +10,7 @@ export default function Search() {
     const router = useRouter();
 
 
-
-
-    // @ts-ignore
-    const submitHandler = async (e) => {
+    const submitHandler = async (e: FormEvent<HTMLFormElement>) => {
 
         // prevent default form submission
         e.preventDefault();
@@ -24,10 +21,6 @@ export default function Search() {
         // redirect to search page
         router.push(`/${search}/`);
     }
-
-
-
-
 
 
     return (
@@ -43,7 +36,8 @@ export default function Search() {
             <button
 
                 type="submit"
-                className="p-2 text-xl rounded-xl bg-slate-300 ml-2 font-bold">🚀</button>
+                className="p-2 text-xl rounded-xl bg-slate-300 ml-2 font-bold">🚀
+            </button>
         </form>
 
     )
