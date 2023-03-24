@@ -7,7 +7,7 @@ export default function Home() {
     <main className={inter.className}>
 
       <h1 className="text-3xl font-bold underline accent-blue-600">
-        Hello world!
+
       </h1>
     </main>
   )
