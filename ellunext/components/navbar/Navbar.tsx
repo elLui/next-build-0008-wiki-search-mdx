@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import Link from "next/link";
+import Search from "@/components/search/Search";
 
 export default function Navbar() {
 
@@ -12,6 +13,8 @@ export default function Navbar() {
                 <Link href="/">
                     supa dupa
                 </Link>
+
+                <Search/>
 
 
             </h1>
